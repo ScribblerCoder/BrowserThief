@@ -3,6 +3,7 @@ All in one Rubber Ducky/BadUSB that runs a powershell script to extract and stea
 <br/><br/>
 ## Features
 - The powershell script runs in-memory and avoids writing to disk which evades Windows Defender detection
+- Powershell execution policy doesn't affect it whatsoever
 - Includes an arduino RubberDucky script that runs in less than 2 seconds
 - Extracts Passwords from all Chrome Profiles, Opera and OperaGX
 - Will be adding Firefox soon
