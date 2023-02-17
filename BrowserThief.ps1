@@ -3,7 +3,7 @@ function pumpndump
     param(
     [Parameter (Mandatory = $true)] [String]$hq
     )
-
+    $ErrorActionPreference = 'SilentlyContinue'
 # Google Chrome
     try {
         
